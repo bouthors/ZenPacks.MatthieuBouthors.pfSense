@@ -2,12 +2,12 @@
 # These variables are overwritten by Zenoss when the ZenPack is exported
 # or saved.  Do not modify them directly here.
 # NB: PACKAGES is deprecated
-NAME = "ZenPacks.MatthieuBouthors.pfSense/"
-VERSION = "1.0.0dev"
-AUTHOR = "Your Name Here"
-LICENSE = ""
+NAME = "ZenPacks.MatthieuBouthors.pfSense"
+VERSION = "0.7.0"
+AUTHOR = "Matthieu Bouthors"
+LICENSE = "GPL v2"
 NAMESPACE_PACKAGES = ['ZenPacks', 'ZenPacks.MatthieuBouthors']
-PACKAGES = ['ZenPacks', 'ZenPacks.MatthieuBouthors', 'ZenPacks.MatthieuBouthors.pfSense/']
+PACKAGES = ['ZenPacks', 'ZenPacks.MatthieuBouthors', 'ZenPacks.MatthieuBouthors.pfSense']
 INSTALL_REQUIRES = []
 COMPAT_ZENOSS_VERS = ""
 PREV_ZENPACK_NAME = ""
