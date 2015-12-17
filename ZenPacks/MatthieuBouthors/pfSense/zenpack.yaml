@@ -1,1 +1,20 @@
-name: ZenPacks.MatthieuBouthors.pfSense/
+name: ZenPacks.MatthieuBouthors.pfSense
+
+classes:
+  pfSenseDevice:
+    base: [zenpacklib.Device]
+    label: pfSense
+
+device_classes:
+  /Network/pfSense:
+    remove: true
+
+    zProperties:
+      zPythonClass: ZenPacks.MatthieuBouthors.pfSense.pfSenseDevice
+      zSnmpMonitorIgnore: false
+      zCollectorPlugins:
+        - zenoss.snmp.NewDeviceMap
+        - zenoss.snmp.DeviceMap
+        - zenoss.snmp.NewRouteMap
+        - zenoss.snmp.UCDHardDiskMap
+
